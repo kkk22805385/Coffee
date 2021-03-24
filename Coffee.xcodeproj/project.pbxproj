@@ -7,15 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002475CA25A5A26000D77D71 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 002475C825A5A26000D77D71 /* star.png */; };
+		002475CB25A5A26000D77D71 /* star-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 002475C925A5A26000D77D71 /* star-fill.png */; };
+		002475D225A5AB2F00D77D71 /* coffee3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 002475CD25A5AB2F00D77D71 /* coffee3.jpeg */; };
+		002475D325A5AB2F00D77D71 /* coffee5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 002475CE25A5AB2F00D77D71 /* coffee5.jpeg */; };
+		002475D425A5AB2F00D77D71 /* coffee1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 002475CF25A5AB2F00D77D71 /* coffee1.jpeg */; };
+		002475D525A5AB2F00D77D71 /* coffee2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 002475D025A5AB2F00D77D71 /* coffee2.jpeg */; };
+		002475D625A5AB2F00D77D71 /* coffee4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 002475D125A5AB2F00D77D71 /* coffee4.jpeg */; };
+		002475E525AC3C8B00D77D71 /* SelAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002475E325AC3C8B00D77D71 /* SelAreaViewController.swift */; };
+		002475E625AC3C8B00D77D71 /* SelAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002475E425AC3C8B00D77D71 /* SelAreaViewController.xib */; };
+		002475EA25AC45A300D77D71 /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002475E825AC45A300D77D71 /* AreaTableViewCell.swift */; };
+		002475EB25AC45A300D77D71 /* AreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002475E925AC45A300D77D71 /* AreaTableViewCell.xib */; };
+		002475EE25AC4D0800D77D71 /* det.png in Resources */ = {isa = PBXBuildFile; fileRef = 002475ED25AC4D0700D77D71 /* det.png */; };
 		007AE8B525A40FA500B671D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AE8B425A40FA500B671D4 /* AppDelegate.swift */; };
 		007AE8B725A40FA500B671D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AE8B625A40FA500B671D4 /* SceneDelegate.swift */; };
 		007AE8B925A40FA500B671D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AE8B825A40FA500B671D4 /* ViewController.swift */; };
 		007AE8BC25A40FA500B671D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007AE8BA25A40FA500B671D4 /* Main.storyboard */; };
 		007AE8BE25A40FA800B671D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007AE8BD25A40FA800B671D4 /* Assets.xcassets */; };
 		007AE8C125A40FA800B671D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007AE8BF25A40FA800B671D4 /* LaunchScreen.storyboard */; };
+		007AE8CB25A411ED00B671D4 /* TypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AE8C925A411ED00B671D4 /* TypeCell.swift */; };
+		007AE8CC25A411EE00B671D4 /* TypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007AE8CA25A411ED00B671D4 /* TypeCell.xib */; };
+		007AE8CF25A4298400B671D4 /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 007AE8CE25A4298400B671D4 /* coffee.jpg */; };
+		007AE8D225A432F400B671D4 /* CoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AE8D125A432F400B671D4 /* CoffeeViewController.swift */; };
+		007AE8D525A4536100B671D4 /* globalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AE8D425A4536100B671D4 /* globalValue.swift */; };
+		007AE8DA25A46F9D00B671D4 /* CoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AE8D825A46F9D00B671D4 /* CoffeeCell.swift */; };
+		007AE8DB25A46F9D00B671D4 /* CoffeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007AE8D925A46F9D00B671D4 /* CoffeeCell.xib */; };
+		007AE8DE25A473A400B671D4 /* globalFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AE8DD25A473A400B671D4 /* globalFunction.swift */; };
+		007AE8E225A58FE100B671D4 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AE8E025A58FE100B671D4 /* LoadViewController.swift */; };
+		007AE8E325A58FE100B671D4 /* LoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007AE8E125A58FE100B671D4 /* LoadViewController.xib */; };
+		007AE8E625A5960B00B671D4 /* coffeeload.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 007AE8E525A5960B00B671D4 /* coffeeload.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002475C825A5A26000D77D71 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = image/star.png; sourceTree = SOURCE_ROOT; };
+		002475C925A5A26000D77D71 /* star-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-fill.png"; path = "image/star-fill.png"; sourceTree = SOURCE_ROOT; };
+		002475CD25A5AB2F00D77D71 /* coffee3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coffee3.jpeg; path = image/coffee3.jpeg; sourceTree = SOURCE_ROOT; };
+		002475CE25A5AB2F00D77D71 /* coffee5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coffee5.jpeg; path = image/coffee5.jpeg; sourceTree = SOURCE_ROOT; };
+		002475CF25A5AB2F00D77D71 /* coffee1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coffee1.jpeg; path = image/coffee1.jpeg; sourceTree = SOURCE_ROOT; };
+		002475D025A5AB2F00D77D71 /* coffee2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coffee2.jpeg; path = image/coffee2.jpeg; sourceTree = SOURCE_ROOT; };
+		002475D125A5AB2F00D77D71 /* coffee4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coffee4.jpeg; path = image/coffee4.jpeg; sourceTree = SOURCE_ROOT; };
+		002475E325AC3C8B00D77D71 /* SelAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelAreaViewController.swift; sourceTree = "<group>"; };
+		002475E425AC3C8B00D77D71 /* SelAreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelAreaViewController.xib; sourceTree = "<group>"; };
+		002475E825AC45A300D77D71 /* AreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
+		002475E925AC45A300D77D71 /* AreaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaTableViewCell.xib; sourceTree = "<group>"; };
+		002475ED25AC4D0700D77D71 /* det.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = det.png; path = image/det.png; sourceTree = SOURCE_ROOT; };
 		007AE8B125A40FA500B671D4 /* Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007AE8B425A40FA500B671D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		007AE8B625A40FA500B671D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +59,17 @@
 		007AE8BD25A40FA800B671D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		007AE8C025A40FA800B671D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		007AE8C225A40FA800B671D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007AE8C925A411ED00B671D4 /* TypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCell.swift; sourceTree = "<group>"; };
+		007AE8CA25A411ED00B671D4 /* TypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeCell.xib; sourceTree = "<group>"; };
+		007AE8CE25A4298400B671D4 /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coffee.jpg; path = image/coffee.jpg; sourceTree = SOURCE_ROOT; };
+		007AE8D125A432F400B671D4 /* CoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewController.swift; sourceTree = "<group>"; };
+		007AE8D425A4536100B671D4 /* globalValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalValue.swift; sourceTree = "<group>"; };
+		007AE8D825A46F9D00B671D4 /* CoffeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCell.swift; sourceTree = "<group>"; };
+		007AE8D925A46F9D00B671D4 /* CoffeeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeCell.xib; sourceTree = "<group>"; };
+		007AE8DD25A473A400B671D4 /* globalFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalFunction.swift; sourceTree = "<group>"; };
+		007AE8E025A58FE100B671D4 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
+		007AE8E125A58FE100B671D4 /* LoadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadViewController.xib; sourceTree = "<group>"; };
+		007AE8E525A5960B00B671D4 /* coffeeload.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coffeeload.jpeg; path = image/coffeeload.jpeg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +88,7 @@
 			children = (
 				007AE8B325A40FA500B671D4 /* Coffee */,
 				007AE8B225A40FA500B671D4 /* Products */,
+				007B7EBF25B5603F00D45516 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +106,42 @@
 				007AE8B425A40FA500B671D4 /* AppDelegate.swift */,
 				007AE8B625A40FA500B671D4 /* SceneDelegate.swift */,
 				007AE8B825A40FA500B671D4 /* ViewController.swift */,
+				007AE8D125A432F400B671D4 /* CoffeeViewController.swift */,
 				007AE8BA25A40FA500B671D4 /* Main.storyboard */,
+				007AE8C925A411ED00B671D4 /* TypeCell.swift */,
+				007AE8CA25A411ED00B671D4 /* TypeCell.xib */,
+				007AE8D825A46F9D00B671D4 /* CoffeeCell.swift */,
+				007AE8D925A46F9D00B671D4 /* CoffeeCell.xib */,
+				007AE8D425A4536100B671D4 /* globalValue.swift */,
+				007AE8DD25A473A400B671D4 /* globalFunction.swift */,
+				002475E325AC3C8B00D77D71 /* SelAreaViewController.swift */,
+				002475E425AC3C8B00D77D71 /* SelAreaViewController.xib */,
+				002475E825AC45A300D77D71 /* AreaTableViewCell.swift */,
+				002475E925AC45A300D77D71 /* AreaTableViewCell.xib */,
+				007AE8E025A58FE100B671D4 /* LoadViewController.swift */,
+				007AE8E125A58FE100B671D4 /* LoadViewController.xib */,
 				007AE8BD25A40FA800B671D4 /* Assets.xcassets */,
 				007AE8BF25A40FA800B671D4 /* LaunchScreen.storyboard */,
 				007AE8C225A40FA800B671D4 /* Info.plist */,
+				007AE8CE25A4298400B671D4 /* coffee.jpg */,
+				002475C925A5A26000D77D71 /* star-fill.png */,
+				002475C825A5A26000D77D71 /* star.png */,
+				007AE8E525A5960B00B671D4 /* coffeeload.jpeg */,
+				002475CF25A5AB2F00D77D71 /* coffee1.jpeg */,
+				002475ED25AC4D0700D77D71 /* det.png */,
+				002475D025A5AB2F00D77D71 /* coffee2.jpeg */,
+				002475CD25A5AB2F00D77D71 /* coffee3.jpeg */,
+				002475D125A5AB2F00D77D71 /* coffee4.jpeg */,
+				002475CE25A5AB2F00D77D71 /* coffee5.jpeg */,
 			);
 			path = Coffee;
+			sourceTree = "<group>";
+		};
+		007B7EBF25B5603F00D45516 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +201,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002475CB25A5A26000D77D71 /* star-fill.png in Resources */,
+				007AE8CF25A4298400B671D4 /* coffee.jpg in Resources */,
+				002475D525A5AB2F00D77D71 /* coffee2.jpeg in Resources */,
 				007AE8C125A40FA800B671D4 /* LaunchScreen.storyboard in Resources */,
+				002475CA25A5A26000D77D71 /* star.png in Resources */,
 				007AE8BE25A40FA800B671D4 /* Assets.xcassets in Resources */,
+				002475E625AC3C8B00D77D71 /* SelAreaViewController.xib in Resources */,
+				007AE8E625A5960B00B671D4 /* coffeeload.jpeg in Resources */,
+				007AE8DB25A46F9D00B671D4 /* CoffeeCell.xib in Resources */,
+				002475EE25AC4D0800D77D71 /* det.png in Resources */,
 				007AE8BC25A40FA500B671D4 /* Main.storyboard in Resources */,
+				007AE8CC25A411EE00B671D4 /* TypeCell.xib in Resources */,
+				002475D425A5AB2F00D77D71 /* coffee1.jpeg in Resources */,
+				002475D325A5AB2F00D77D71 /* coffee5.jpeg in Resources */,
+				002475D625A5AB2F00D77D71 /* coffee4.jpeg in Resources */,
+				002475D225A5AB2F00D77D71 /* coffee3.jpeg in Resources */,
+				007AE8E325A58FE100B671D4 /* LoadViewController.xib in Resources */,
+				002475EB25AC45A300D77D71 /* AreaTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007AE8E225A58FE100B671D4 /* LoadViewController.swift in Sources */,
 				007AE8B925A40FA500B671D4 /* ViewController.swift in Sources */,
+				002475EA25AC45A300D77D71 /* AreaTableViewCell.swift in Sources */,
+				007AE8DA25A46F9D00B671D4 /* CoffeeCell.swift in Sources */,
 				007AE8B525A40FA500B671D4 /* AppDelegate.swift in Sources */,
+				002475E525AC3C8B00D77D71 /* SelAreaViewController.swift in Sources */,
+				007AE8D525A4536100B671D4 /* globalValue.swift in Sources */,
+				007AE8D225A432F400B671D4 /* CoffeeViewController.swift in Sources */,
 				007AE8B725A40FA500B671D4 /* SceneDelegate.swift in Sources */,
+				007AE8DE25A473A400B671D4 /* globalFunction.swift in Sources */,
+				007AE8CB25A411ED00B671D4 /* TypeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
