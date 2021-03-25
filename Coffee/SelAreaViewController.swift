@@ -7,18 +7,21 @@
 
 import UIKit
 
+protocol SelAreaViewControllerDelegate {
+    func retCountry(strCountry:String)
+}
+
 class SelAreaViewController: UIViewController {
 
     @IBOutlet var areaTable: UITableView!
-    @IBOutlet var btnDetermine: UIButton!
     var areaStas = [areaSta]()
+    var country = ""
+    var delegata : SelAreaViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        btnDetermine.layer.shadowOffset = CGSize.init(width: 0, height: 3)//默认为0,-3
-        btnDetermine.layer.shadowColor = UIColor.black.cgColor
-        btnDetermine.layer.shadowOpacity = 0.6//阴影透明度，默认0
-        btnDetermine.layer.cornerRadius = 24
+      
         
         areaTable.register(UINib.init(nibName: "AreaTableViewCell", bundle: nil),forCellReuseIdentifier:"AreaTableViewCell")
         
@@ -27,13 +30,12 @@ class SelAreaViewController: UIViewController {
             let areasta = areaSta()
             areasta.area = area
             areasta.sta = "0"
+            if area == country {
+                areasta.sta = "1"
+            }
             areaStas.append(areasta)
         }
-        
         // Do any additional setup after loading the view.
-    }
-
-    @IBAction func btnDetermine(_ sender: Any) {
     }
 }
 
@@ -53,7 +55,10 @@ extension SelAreaViewController:UITableViewDelegate,UITableViewDataSource{
         
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegata?.retCountry(strCountry: areaStas[indexPath.row].area)
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
 

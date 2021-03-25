@@ -9,10 +9,7 @@ import Foundation
 import ARKit
 
 struct globalValue{
-    let dictCountry = ["基隆":"Keelung","台北":"Taipei","桃園":"Taoyuan","新竹":"Hsinchu","苗栗":"Miaoli","台中":"Taichung","彰化":"Changhua","南投":"Nantou" ,"雲林":"Yunlin" , "嘉義":"Chiayi" ,"台南":"Tainan","高雄":"Kaohsiung" ,"屏東":"Pingtung" ,"宜蘭":"Yilan"  ,"花蓮":"Hualien" ,"台東":"Taitung"  ,"澎湖":"Penghu"  , "媽祖":"Lienchiang" ]
-    let arrayCountry = ["基隆","台北","桃園","新竹","苗栗","台中","彰化","南投","雲林", "嘉義" ,"台南","高雄" ,"屏東" ,"宜蘭"  ,"花蓮" ,"台東","澎湖", "媽祖"]
-    
-    static var coffeeDatas = [CoffeeData]()
+    let arrayCountry = ["全部","基隆","台北","桃園","新竹","苗栗","台中","彰化","南投","雲林", "嘉義" ,"台南","高雄" ,"屏東" ,"宜蘭"  ,"花蓮" ,"台東","澎湖", "媽祖"]    
 }
 
 struct type {

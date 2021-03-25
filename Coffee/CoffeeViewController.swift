@@ -10,7 +10,7 @@ import UIKit
 class CoffeeViewController: UIViewController {
     
     var type = ""
-    var country = ""
+    var country = "全部"
     var coffeeDatas = [CoffeeData]()
     let imgbg = [UIImage(named: "coffee1.jpeg"),UIImage(named: "coffee2.jpeg"),UIImage(named: "coffee3.jpeg"),UIImage(named: "coffee4.jpeg"),UIImage(named: "coffee5.jpeg")]
     
@@ -18,26 +18,29 @@ class CoffeeViewController: UIViewController {
     @IBOutlet var tableCoffee: UITableView!
     let loadViewController = LoadViewController(nibName: "LoadViewController", bundle: nil)
     
+    
     override func viewDidLoad() {
         labelType.text = type
         tableCoffee.register(UINib.init(nibName: "CoffeeCell", bundle: nil),forCellReuseIdentifier:"CoffeeCell")
-        getCoffeeData()
+        getCoffeeData(engCountry:changeName(str: country))
         tableCoffee.separatorStyle = .none
-        self.view.addSubview(loadViewController.view)
+        
     }
-    override func viewDidAppear(_ animated: Bool) {
-    }
+ 
     @IBAction func btnBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func btnArea(_ sender: Any) {
         let vc = SelAreaViewController(nibName: "SelAreaViewController", bundle: nil)
+        vc.country = country
+        vc.delegata = self
         present(vc, animated: true, completion: nil)
     }
     
     
-    func getCoffeeData(){
-        let address = "https://cafenomad.tw/api/v1.2/cafes/"
+    func getCoffeeData(engCountry:String){
+        self.view.addSubview(loadViewController.view)
+        let address = "https://cafenomad.tw/api/v1.2/cafes/" + engCountry
         if let url = URL(string: address) {
             // GET
             URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -49,12 +52,12 @@ class CoffeeViewController: UIViewController {
                    
                     if let coffeeData = try? decoder.decode([CoffeeData].self, from: data) {
                         DispatchQueue.main.sync{
+                            self.coffeeDatas.removeAll()
                            for coffee in coffeeData{
                                let coffeeStruct = CoffeeData(name: coffee.name, city: coffee.city, wifi: coffee.wifi, seat: coffee.seat, quiet: coffee.quiet, tasty: coffee.tasty, cheap: coffee.cheap, music: coffee.music, url: coffee.url, address: coffee.address, latitude: coffee.name, longitude: coffee.longitude, limited_time: coffee.limited_time, socket: coffee.socket, standing_desk: coffee.standing_desk, mrt: coffee.mrt, open_time: coffee.open_time)
                                 
-                                globalValue.coffeeDatas.append(coffeeStruct)
+                                self.coffeeDatas.append(coffeeStruct)
                             }
-                            self.coffeeDatas = globalValue.coffeeDatas
                             self.tableCoffee.reloadData()
                             self.closeLoad(viewController: self.loadViewController)
                         }
@@ -130,5 +133,12 @@ extension CoffeeViewController: UITableViewDelegate,UITableViewDataSource{
         
         cell.imgBackground.image = imgbg[indexPath.row % 5]
         return cell
+    }
+}
+
+extension CoffeeViewController : SelAreaViewControllerDelegate{
+    func retCountry(strCountry: String) {
+        country = strCountry
+        getCoffeeData(engCountry: changeName(str: country))
     }
 }
